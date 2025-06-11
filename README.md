@@ -45,4 +45,4 @@ O projeto é composto por:
 - [WhatsApp](https://wa.me/5581992813000)
 
 ## 📄 Licença  
-Este projeto está licenciado sob a **MIT License** – sinta-se livre para utilizar, modificar e compartilhar, com os devidos créditos.
+Este é um projeto acadêmico e pessoal. Sinta-se livre para se inspirar.
