@@ -59,6 +59,7 @@ Aplicação de boas práticas de acessibilidade e usabilidade
     <a href="https://www.linkedin.com/in/mariana-maliu-6572a035a/" target="_blank" rel="noopener noreferrer">
         LinkedIn
     </a>
+    <br>
     <a href="https://wa.me/5581992813000" target="_blank" rel="noopener noreferrer">
         WhatsApp
     </a>
