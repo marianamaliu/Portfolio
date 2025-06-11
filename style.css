@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(178, 147, 154);
+    color: antiquewhite;
+}
+
+#sobre, #projetos, #certificados, #contato {
+    scroll-margin-top: 100px;
+}
+
+/*menu*/
+.navegacao{
+    position: fixed;
+    top: 0;
+    background-color: rgb(98, 73, 73);
+    width: 100%;
+    padding: 1.3rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+/*feito para a transição no menu com o mouse*/
+.menu-link::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(132, 96, 96);
+    transition: width 0.3s ease;
+}
+
+.menu-link:hover::after{
+    width: 100%;
+}
+
+/* inicio */
+.inicio {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px 20px 20px;
+    text-align: center;
+}
+
+.foto-perfil {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.sobre-titulo{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sobre-conteudo{
+    margin-top: 10px;
+    max-width: 800px;  
+    margin: 0 auto;     
+    padding: 0 20px;
+    text-align: center;
+}
+.botao-projetos{
+    color: antiquewhite;
+    text-align: center;
+     margin-top: 20px;
+     cursor: pointer;
+     font-weight: bold;
+     text-decoration: none;
+}
+.botao-projetos:hover{
+    transform: translateY(-3px);
+}
+
+.projetos-titulo{
+    padding: 50px 20px 20px 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.projetos-conteudo{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.projetos-img1{
+    height: 200px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.projetos-img2{
+    height: 200px;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.projetos-paragrafo{
+    margin-top: 10px;
+    max-width: 800px;  
+    margin: 0 auto;     
+    padding: 0 20px;
+    text-align: center;
+}
+
+.projetos-construcao{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.projetos-img3{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.projetos-img4{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.projetos-img5{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.botao-certificados{
+    color: antiquewhite;
+    text-align: center;
+     margin-top: 20px;
+     cursor: pointer;
+     font-weight: bold;
+     text-decoration: none;
+}
+.botao-certificados:hover{
+    transform: translateY(-3px);
+}
+.certificados {
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.certificados-titulo {
+    text-align: center;
+    padding: 50px 20px 20px 10px;
+}
+
+.certificados-conteudo {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.certificados-conteudo div {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.certificados-info {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.certificados-conteudo img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+
+.contato{
+    padding: 6rem 2rem;
+}
+
+.contato-titulo{
+    text-align: center;
+}
+
+.contato-formulario{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.formulario-campo{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px antiquewhite;
+    outline: none;
+
+}
+
+.formulario-info{
+    margin-bottom: 1.5rem;
+}
+
+.botao-formulario{
+    color: rgb(178, 147, 154);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+.botao-formulario:hover{
+    transform: translateY(-3px);
+}
+
+
+footer {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: bold;
+}
