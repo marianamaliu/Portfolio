@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mariana Maliu - Meu Portfólio</title>
+</head>
+
+<body>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#certificados" class="menu-link">Certificados</a>
+            </li>
+            <li>
+                <a href="#contato" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main id="inicio" class="inicio">
+        <img src="img/fotoperfilportfolio.jpg" alt="Mariana Maliu" class="foto-perfil">
+        <h1>Mariana Maliu Montarroyos</h1>
+        <p>Estudante de Ciência da Computação</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-conteudo">
+            <p class="sobre-paragrafo">Me chamo Mariana, tenho 18 anos e hoje me encontro no primeiro período cursando Ciência da Computação na CESAR School. Desde pequena sempre fui uma menina curiosa e impressionada em como a tecnologia mudava o mundo e hoje me vejo estudando o que eu mais gosto.</p>
+            <p class="sobre-paragrafo">Adoro aprender coisas novas, principalmente quando envolvem diferentes tipos de inovações. Gosto de explorar linguagens, ferramentas e entender como tudo se conecta. Também tenho bastante interesse em como a tecnologia pode ajudar nos negócios e fazer parte de soluções mais inteligentes no dia a dia das empresas.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <p class="projetos-paragrafo">Projetos acadêmicos desenvolvidos por mim e pelo meu grupo. Para ver acessá-los, clique em "Saiba mais".</p>
+        <div class="projetos-conteudo">
+        
+        </div>
+        <div class="botao-projetos">
+            <a href="projetos.html" class="botao-projetos">Saiba mais</a>
+        </div>
+    </section>
+
+    <section id="certificados" class="certificados">
+        <h2 class="certificados-titulo">Meus Certificados</h2>
+        <p class="projetos-paragrafo">Certificados pessoais pela Cisco Networking Academy com parceria com a CESAR School. Para acessá-los, clique em "Saiba mais".</p>
+        <div class="certificados-conteudo"></div>
+        
+        <div class="botao-certificados">
+        <a href="certificados.html" class="botao-certificados">Saiba mais</a>
+    </div>
+
+    </section>
+
+    <section id="contato" class="contato">
+        <h2 class="contato-titulo">Entre em Contato</h2>
+        <form class="contato-formulario" id="formulario" onsubmit="enviarWhatsapp(event)">
+            <div class="formulario-info">
+                <input placeholder="Nome" class="formulario-campo" id="nome">
+            </div>
+            <div class="formulario-info">
+                <textarea class="formulario-campo" placeholder="Digite sua mensagem" rows="4"  id="mensagem"></textarea>
+            </div>
+            
+            <button type="submit" class="botao-formulario">Enviar Whatsapp</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/mariana-maliu-montarroyos-6572a035a/?locale=pt_BR" target="_blank">LinkedIn</a>
+            <a href="https://github.com/marianamaliu" target="_blank">GitHub</a>
+            <a href="mailto:marianamaliuu@gmail.com" target="_blank">E-mail</a>
+        </div>
+        <p>&copy; 2025 Mariana Maliu. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function enviarWhatsapp(event){
+            event.preventDefault()
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5581992813000';
+            const texto = `Olá! Me chamo ${nome}, ${mensagem}`
+
+            const mensagemformatada = encodeURIComponent(texto)
+            const url = `https://wa.me/${telefone}?text=${mensagemformatada}`
+            window.open(url, '_blank')
+        }
+    </script>
+
+</body>
+
+</html>
